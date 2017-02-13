@@ -5,7 +5,10 @@
       <TITLE>Veldweekend 2017</TITLE>
       <link rel="stylesheet" type="text/css" href="css/core.css">
       <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-      <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+      <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+      <script src="bower_components/jquery/dist/jquery.min.js"></script>
+      <script src="js/homepage.js"></script>
       <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
    </HEAD>
    <BODY>
@@ -13,6 +16,38 @@
             <div id="mainPageHeader"><h1>Veldweekend 2017</h1></div>
             <div class="logo_container">
                 <img src="images/logo_hogekempen_black.png"/>
+            </div>
+            <div id="content">
+                <div class="content_birds">
+                    <img src="images/header_hoge_kempen_small.jpg"/>
+                    <div class="header"><p>sudoku</p></div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis neque rutrum ligula bibendum, 
+                        non pretium augue tempus. Nam egestas purus in sollicitudin posuere. 
+                        Morbi dapibus justo nibh, vitae pellentesque quam consequat a. Suspendisse semper dignissim 
+                        elit sit amet posuere. Integer eget sem gravida, malesuada diam sit amet, maximus ex. Morbi laoreet 
+                        accumsan pretium. Morbi eu nisi aliquam, sollicitudin mi et, porta ex.</p>
+                    <p>Maecenas finibus ex nec leo ornare molestie. Aliquam erat volutpat. Pellentesque ac dolor sed felis 
+                        tristique tincidunt at quis diam. Phasellus vestibulum enim convallis risus ornare, eget elementum 
+                        est ultricies. Proin mollis a lectus molestie blandit. Mauris scelerisque at lacus sed consequat. 
+                        Maecenas ullamcorper purus nec hendrerit suscipit. Nullam at metus a odio viverra consectetur. 
+                        Sed eu diam commodo, mollis ipsum sit amet, gravida ante. Suspendisse consequat rhoncus purus 
+                        eget dapibus.</p>
+                    <p>Quisque eget eros ex. Nulla vitae dictum massa. Aliquam porta eu libero nec sollicitudin. Nullam volutpat 
+                        ante nec suscipit fringilla. Integer purus libero, finibus non mollis sit amet, iaculis sed ligula. 
+                        Phasellus iaculis molestie dui, cursus tincidunt mi rhoncus sit amet. Integer ipsum ante, aliquet ac 
+                        pretium at, rutrum sit amet nulla. Nam ac eleifend felis. Proin tempor a enim id cursus. Pellentesque 
+                        condimentum erat at nisi faucibus suscipit. Sed at aliquet erat, eget interdum dui. In consequat massa 
+                        vitae enim cursus, vitae egestas lacus interdum. Aliquam mauris orci, posuere at dolor nec, laoreet finibus 
+                        erat. In porttitor est auctor urna dignissim faucibus vel sit amet libero. Aenean rutrum metus a 
+                        ultricies mattis. Sed efficitur sem vitae laoreet hendrerit.</p>
+                </div>
+            </div>
+
+            <div id="submenu">
+                <div class="sm_onderweg">
+                    <div class="sudoku"><p>sudoku</p></div>
+                    <div class="zoeker"><p>zoeker</p></div>
+                </div>
             </div>
             <div id="footer">
                 <ul>
@@ -30,7 +65,7 @@
                     </a></li>
                     <li class="camping"><a href="#">
                         <strong>
-                            <p><i class="fa fa-free-code-camp" aria-hidden="true"></i>
+                            <p><i class="fa fa-fire" aria-hidden="true"></i>
                             CAMPING</p>
                         </strong>
                     </a></li>
@@ -52,7 +87,8 @@
                             FAUNA</p>
                         </strong>
                     </a></li>
-                </div>
+                </ul>
+                <span class="smallmenu"><i class="fa fa-bars" aria-hidden="true"></i></span>
             </div>
         </container>
         <container class="showMobile">
