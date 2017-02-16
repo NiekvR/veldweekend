@@ -114,12 +114,31 @@ body {
     margin: 0 5px 0 5px;
     width: 48px;
     height: 100%;
-    background-color: #f2c500;
     -webkit-border-radius: 25px; 
     -moz-border-radius: 25px; 
     border-radius: 25px; 
     text-align: center;
     cursor:pointer
+}
+
+.sm_onderweg div {
+    background-color: #f2c500;
+}
+
+.sm_camping div {
+    background-color: #1fce6d;
+}
+
+.sm_area div {
+    background-color: #e87e04;
+}
+
+.sm_flora div {
+    background-color: #2c97de;
+}
+
+.sm_fauna div {
+    background-color: #e94b35;
 }
 
 #submenu div p {

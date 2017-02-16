@@ -4,19 +4,19 @@ $(document).ready(function(){
         toggleNav();
     });
     $(".onderweg").click(function() {
-        openOnderweg(1);
+        openSubmenu(1);
     });
     $(".camping").click(function() {
-        openOnderweg(2);
+        openSubmenu(2);
     });
     $(".area").click(function() {
-        openOnderweg(3);
+        openSubmenu(3);
     });
     $(".flora").click(function() {
-        openOnderweg(4);
+        openSubmenu(4);
     });
     $(".fauna").click(function() {
-        openOnderweg(5);
+        openSubmenu(5);
     });
     $(".smallmenu").click(function() {
         openNavFromSmallMenu();
@@ -57,14 +57,12 @@ function closeNav() {
     });
 }
 
-function openOnderweg(childNumber) {
+function openSubmenu(childNumber) {
     $("#footer > ul").animate({
         bottom: "-250px"
     }, {
         complete: function() {
-            $(".sm_onderweg").first().show("fast", function showNext() {
-                $( this ).next( "div" ).show( "fast", showNext );
-            });
+            $("#submenu > div:nth-child("+childNumber+")").show("fast")
         }
     });
     for(i = 1; i <= childNumber; i++) {
