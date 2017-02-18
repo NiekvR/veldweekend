@@ -76,19 +76,56 @@ body {
     width: 80%;
 }
 
+#sudoku_container {
+    height: calc(100% - 100px) !important;
+    width: 80% !important;
+    padding-top: 135px;
+    margin: auto;
+}
+
+.sudoku_board {
+    height: 100% !important;
+    width: 100% !important;
+}
+
 #content .header {
     position: absolute;
     top: 75px;
     left: calc(50% - 25px);
     width: 50px;
     height: 50px;
-    background-color: #f2c500;
     -webkit-border-radius: 25px; 
     -moz-border-radius: 25px; 
     border-radius: 25px; 
-    text-align: center;
-    cursor:pointer
 }
+
+#content .header p {
+    text-align: center;
+}
+
+#content .content_sudoku div {
+    background-color: #f2c500;
+}
+
+#content .content_birds div {
+    background-color: #e94b35;
+}
+
+/*#content .sm_camping div {
+    background-color: #1fce6d;
+}
+
+#content .sm_area div {
+    background-color: #e87e04;
+}
+
+#content .sm_flora div {
+    background-color: #2c97de;
+}
+
+#content .sm_fauna div {
+    background-color: #e94b35;
+}*/
 
 #content .header p {
     margin: 0;
