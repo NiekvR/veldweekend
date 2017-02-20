@@ -103,29 +103,33 @@ body {
     text-align: center;
 }
 
-#content .content_sudoku div {
+#content .content_onderweg .header {
     background-color: #f2c500;
 }
 
-#content .content_birds div {
+#content .content_onderweg .header {
+    background-color: #f2c500;
+}
+
+#content .content_fauna .header {
     background-color: #e94b35;
 }
 
-/*#content .sm_camping div {
+#content .content_camping .header {
     background-color: #1fce6d;
 }
 
-#content .sm_area div {
+#content .content_gebied .header {
     background-color: #e87e04;
 }
 
-#content .sm_flora div {
+#content .content_flora .header {
     background-color: #2c97de;
 }
 
-#content .sm_fauna div {
+#content .content_fauna .header {
     background-color: #e94b35;
-}*/
+}
 
 #content .header p {
     margin: 0;
@@ -141,7 +145,6 @@ body {
 }
 
 #submenu div {
-    width: 120px;
     height: 100%;
     margin: auto;
 }
@@ -149,13 +152,33 @@ body {
 #submenu div div {
     float: left;
     margin: 0 5px 0 5px;
-    width: 48px;
     height: 100%;
+    width: 48px;
     -webkit-border-radius: 25px; 
     -moz-border-radius: 25px; 
     border-radius: 25px; 
     text-align: center;
     cursor:pointer
+}
+
+.sm_onderweg {
+    width: 120px;
+}
+
+.sm_camping {
+    width: 180px;
+}
+
+.sm_area {
+    width: 58px;
+}
+
+.sm_flora {
+    width: 120px;
+}
+
+.sm_fauna {
+    width: 240px;
 }
 
 .sm_onderweg div {

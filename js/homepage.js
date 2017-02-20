@@ -27,8 +27,38 @@ $(document).ready(function(){
     $(".sudoku").click(function() {
         openContent("sudoku");
     });
+    $(".zoeker").click(function() {
+        openContent("zoeker");
+    });
+    $(".ligging").click(function() {
+        openContent("ligging");
+    });
+    $(".cmp_informatie").click(function() {
+        openContent("cmp_informatie");
+    });
+    $(".contact").click(function() {
+        openContent("contact");
+    });
+    $(".gb_informatie").click(function() {
+        openContent("gb_informatie");
+    });
+    $(".algemeen").click(function() {
+        openContent("algemeen");
+    });
+    $(".to_see").click(function() {
+        openContent("to_see");
+    });
+    $(".mammals").click(function() {
+        openContent("mammals");
+    });
     $(".birds").click(function() {
         openContent("birds");
+    });
+    $(".insects").click(function() {
+        openContent("insects");
+    });
+    $(".fish").click(function() {
+        openContent("fish");
     });
 });
 var activeMenu = 0;
@@ -44,6 +74,7 @@ function toggleNav(){
 }
 
 function openNavFromSmallMenu() {
+    activeMenu = 0;
     $("#footer > ul").animate({
         bottom: "0px"
     });
@@ -52,6 +83,7 @@ function openNavFromSmallMenu() {
 }
 /* Set the position of the navigation to 0 from bottom */
 function openNav() {
+    activeMenu = 0;
     $("#footer > ul").animate({
         bottom: "0px"
     });
@@ -67,7 +99,7 @@ function closeNav() {
 
 function openSubmenu(childNumber) {
     if(activeMenu == childNumber) {
-        //Do Nothing
+        $("#submenu > div:nth-child("+childNumber+")").show("fast")
     } else {
         $("#footer > ul").animate({
             bottom: "-250px"
@@ -98,6 +130,7 @@ function resetMenuItems() {
 }
 
 function openContent(content_tab) {
+    $("#content > div").hide();
     $(".content_" + content_tab).show();
     if(content_tab == "sudoku") {
         setUpSudoku();

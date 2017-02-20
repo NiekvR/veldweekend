@@ -284,9 +284,6 @@ Sudoku.prototype.resizeWindow = function(){
     var gameover_pos_new = { left : ( screen.w/20 ), top  : ( screen.w/20 + b_pos.top ) };    
     
     $('#'+ this.id +' .gameover').css({'left': gameover_pos_new.left, 'top': gameover_pos_new.top});    
-    
-    console.log('screen', screen);    
-    console.timeEnd("resizeWindow");
 };
 
 /**
@@ -367,7 +364,6 @@ Sudoku.prototype.cellSelect = function(cell){
 Add value from sudoku console to selected board cell
 */
 Sudoku.prototype.addValue = function(value) {
-    console.log('prepare for addValue', value);
     
     var    
         position       = { x: $(this.cell).attr('x'), y: $(this.cell).attr('y') },        
@@ -403,8 +399,7 @@ Sudoku.prototype.addValue = function(value) {
         }
     } else {
         //add value
-        $(this.cell).removeClass('notvalid');        
-        console.log('Value added ', value); 
+        $(this.cell).removeClass('notvalid');
       
         //remove all notes from current cell,  line column and group
         $(horizontal_notes).remove();
@@ -414,7 +409,6 @@ Sudoku.prototype.addValue = function(value) {
     
     //recalculate completed cells
     this.cellsComplete = $('#'+ this.id +' .sudoku_board .cell:not(.notvalid) span:not(:empty)').length;
-    console.log('is game over? ', this.cellsComplete, this.cellsNr, (this.cellsComplete === this.cellsNr) );
     //game over
     if (this.cellsComplete === this.cellsNr) {
         this.gameOver();
@@ -430,7 +424,6 @@ Sudoku.prototype.addValue = function(value) {
 Add note from sudoku console to selected board cell
 */
 Sudoku.prototype.addNote = function(value) {
-  console.log('addNote', value);
  
   var 
     t = this,
@@ -466,7 +459,6 @@ Sudoku.prototype.removeNote = function(value) {
 End game routine
 */
 Sudoku.prototype.gameOver = function(){
-    console.log('GAME OVER!');  
     this.status = this.END;   
   
     $('#'+ this.id +' .gameover_container').show();
@@ -495,7 +487,6 @@ Sudoku.prototype.run = function(){
             numSelected    = $(this).hasClass('selected');
                 
         if (clickMarkNotes) {
-            console.log('clickMarkNotes');
             t.markNotes = !t.markNotes;
             
             if(t.markNotes) { 
