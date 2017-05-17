@@ -41,10 +41,11 @@ $(document).ready(function(){
     $(".routes").click(function() {
         openContent("routes");
         $('.map').hide();
+        $('#map').show();
         initializeFirstRoute();
     });
     $(".route_second").click(function() {
-        $('.map').hide();
+        hideMaps();
         $('#mapTwo').show();
         initializeSecondRoute();
     });
@@ -256,4 +257,11 @@ function initializeSecondRoute() {
             directionsDisplay.setDirections(result);
         }
     });
+}
+
+function hideMaps() {
+    $('#map').hide();
+    $('#mapTwo').hide();
+    $('#mapThree').hide();
+    $('#mapFour').hide();
 }
