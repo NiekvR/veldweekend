@@ -27,55 +27,559 @@
                 <div class="content_onderweg content_zoeker">
                     <div class="header"><p>zoeker</p></div>
                 </div>
-                <div class="content_camping content_ligging">
-                    <div class="header"><p>ligging</p></div>
+                <div class="content_programma content_camping">
+                    <div class="header"><p>camping</p></div>
                 </div>
-                <div class="content_camping content_cmp_informatie">
-                    <div class="header"><p>informatie</p></div>
+                <div class="content_programma content_schema">
+                    <div class="header"><p>schema</p></div>
                 </div>
-                <div class="content_camping content_contact">
-                    <div class="header"><p>contact</p></div>
+                <div class="content_programma content_routes">
+                    <div class="header"><p>routes</p></div>
+                    <div class="routes">
+                        <div class="route_first">
+                            <p>Dag 1</p>
+                        </div>
+                        <div class="route_second">
+                            <p>Dag 2</p>
+                        </div>
+                        <div class="route_third">
+                            <p>Dag 3</p>
+                        </div>
+                        <div class="route_third">
+                            <p>Dag 4</p>
+                        </div>
+                    </div>
+                    <div id="map" class="map"></div>
+                    <div id="mapTwo" class="map"></div>
+                    <div id="mapThree" class="map"></div>
+                    <div id="mapFour" class="map"></div>
+                    
                 </div>
                 <div class="content_gebied content_gb_informatie">
+                    <img src="images/img_gebied_informatie.png"/>
                     <div class="header"><p>informatie</p></div>
+                    <div class="authors">
+                        <div><div class="ike"></div><p>Ike</p></div>
+                    </div>
+                    <h3>Nationaal Park De Hoge Kempen</h3>
+                    <p>Om optimaal te kunnen genieten van dit mooie weekend moet je eigenlijk wel weten waar je <label id="uithangt" class="uithangt">nu eigenlijk 
+                        uithangt</label> <label class="onderwegbent uithangt">/</label><label id="onderwegbent" class="onderwegbent"> naar onderweg bent 
+                        </label><label class="onderwegbent uithangt">(aanklikken wat niet van toepassing is)</label>. Als je een beetje lui bent: 
+                        hier volgt er een algemene introductie. Kun je toch een beetje meepraten.</p>
+                    <h3><label class="uithangt">Waar ben ik nu eigenlijk </label><label class="onderwegbent uithangt">/</label><label class="onderwegbent"> waar ga ik eigenlijk heen?</label></h3>
+                    <p>(Dit is een beetje vanuit mijn perspectief geschreven – ik stap altijd maar in en zie wel waar we heen 
+                        gaan. Misschien niet zo herkenbaar, maar ach). De Hoge Kempen liggen dus in België. Waar dan? In de 
+                        Belgische provincie Limburg, zo ongeveer tegen Nederlands Limburg aan. Kijk maar op het kaartje hierboven.</p>
+                    <h3>Wat is er te zien in De Hoge Kempen?</h3>
+                    <p>Natuur! In al haar glorie!</br>
+                        Het park is ongeveer 5700 ha groot (dat is dus 57 km2, voor als je ook nooit weet wat ha ook alweer betekent) 
+                        en is geopend in 2006. De meest voorkomende biotopen zijn naaldbossen en heide. Daarnaast zijn er loofbossen, 
+                        landduinen, vennen, beken, droogdalen, vijvers, grindplassen en mijnsteenbergen (ik weet ook niet wat dat 
+                        precies zijn maar als je dat echt wilt weten moet je denk ik verderop in t boekje kijken, of aan iemand 
+                        vragen?!). In deze wildernis leven natuurlijk allerlei zeldzame en bijzondere dieren en plantjes. <strong>Oja? Wat 
+                        dan?</strong> Nou… jeneverbes, gaspeldoorn, rode dopheide, gagel, moeraswolfsklauw, beenbreek, libellen, heideblauwtje, 
+                        koninginnenpage, veldparelmoervlinder, heikikker, rugstreeppad, gladde slang, levendbarende hagedis (wajo!), 
+                        beekprik, zwarte specht, nachtzwaluwen en reeën.</p>
+                    <p><i class="fa fa-arrow-right" aria-hidden="true"></i>Vind ze allemaal! (Succes)</p>
+                    <h3>Moet ik nog meer weten?</h3>
+                    <p>JA!</br></br>En nu om je heen gaan kijken (of verder lezen, mag ook hoor)! Veel plezier!</p>
+
+                </div>
+                <div class="content_gebied content_maastricht">
+                    <img src="images/img_maastricht.jpg"/>
+                    <div class="header"><p class="two-lines">maas-</br>tricht</p></div>
+                     <div class="authors">
+                        <div><div class="marjolein"></div><p>Marjolein</p></div>
+                    </div>
+                    <h3>Mestreech</h3>
+                    <p>Maastricht!! Mosae Trajectum: de doorwaadbare plaats in de Maas. Een middeleeuwse stad vol interessante geologie, flora&fauna, vlaai waar de zoete geur van Luikse (?) wafels je continu tegemoet komt.</p>
+                    <p>Maar hoe is het nou om in Maastricht te wonen? Waar kan je het beste eten? Wat kan je het beste zeggen? En niet geheel onbelangrijk: de beste plantjes vinden? Onze correspondente vroeg het in een exclusief interview met een antropologe wonende te Maastricht.</p>
+                    <p>Enne... Krijg je na dit interview zin in lekker eten? Tijdens dit interview bood onze antropologe een lijst aan met goede etensplekjes in Maastricht:</p>
+                    <h3>Limburgse vlaai zonder zitplaats:</h3>
+                    <a href="www.bakkerijhermans.nl"><p>Matthieu Hermans</p></a>
+                    <h3>Limburgse vlaai met zitplaats:</h3>
+                    <a href="http://www.bisschopsmolen.nl/"><p>Bisschopsmolen</p></a>
+                    <h3>Chocolademelk:</h3>
+                    <a href="www.chocolatecompany.nl"><p>Chocolate Company</p></a>
+                    <h3>Maastricht goes hipster:</h3>
+                    <p>Fish and chips: Jack Whites</br>
+                    Burger: <a href="www.burgerlijk.eu">Burgerlijk</a></br>
+                    Wraps: <a href="www.johnnywrapmaastricht.nl">Johnny Wrap</a></br>
+                    <a href="www.debrandweer.com">Eten in een brandweerkazerne</a></p>
+                    <p>Enne... Wil je nog altijd een Mosasaurus zien? Ga dan naar het Natuurhistorisch Museum in Maastricht. Ook leuk: in Utrecht is een bijzondere collectie te vinden van Mestreechse carnavalsposters van de laatste jaren. Deze collectie is speciaal bewaard ter ere van Maastrichtenaar dr. ir. Fons Cremers. Ook benieuwd? Bezoek dan de vijfde verdieping in het Hugo Kruytgebouw op Padualaan 8 te Utrecht. Toegang is gratis.</p>
+                    <p>Haije!</p>
+                    <h3>Interview</h3>
+                    <img class="img_interview" src="images/img_interview_1.png"/>
+                    <img class="img_interview" src="images/img_interview_2.png"/>
+                    <img class="img_interview" src="images/img_interview_3.png"/>
+                    <img class="img_interview" src="images/img_interview_4.png"/>
+                    <img class="img_interview" src="images/img_interview_5.png"/>
+                    <img class="img_interview" src="images/img_interview_6.png"/>
+                </div>
+                <div class="content_gebied content_politiek">
+                    <img src="images/img_politiek.png"/>
+                    <div class="img_bijschrift">
+                        <p>Donald Trump</p>
+                    </div>
+                    <div class="header"><p>politiek</p></div>
+                     <div class="authors">
+                        <div><div class="jelmer"></div><p>Jelmer</p></div>
+                        <div><div class="catharina"></div><p>Catharina</p></div>
+                    </div>
+                    <h3>- POLITIEKE UPDATE HOGE KEMPEN -</h3>
+                    <h3>Executive summary</h3>
+                    <ul>
+                        <li>Scheiding van machten is in Maasmechelen geen prioriteit. Daarom het advies om ten allen tijden 
+                            de Belgische Grondwet bij u te dragen.</li>
+                        <li>Burgemeester Raf Terwingen ("Rafje" voor zijn vrienden) en een roedel grijze wolven zijn in de 
+                            nabijheid van de Hoge Kempen gesignaleerd.</li>
+                        <li>Indien u grijze wolven ziet, kunt u beter de andere kant op rennen! Raf is dan mogelijk ook in 
+                            de buurt.</li>
+                    </ul>
+                    <h3>Achtergrondinformatie</h3>
+                    <p>First things first: De Hoge Kempen vallen onder de gemeente Maasmechelen. Een uiterst idyllische plaats 
+                        met maar liefst 37.696 inwoners. In tegenstelling tot Nederland heeft een Belgische gemeente geen 
+                        wethouders maar zogenaamde schepenen. Er is in België dus ook een College van Burgemeester en Schepenen. 
+                        Om de lezer zo goed mogelijk voor te bereiden op de uiterst precaire politieke situatie rondom De Hoge 
+                        Kempen zullen we een aantal eigenaardigheden van het College van Maasmechelen onder de loep nemen.</p>
+                    <h3>Scheiding van machten in Maasmechelen geen prioriteit</h3>
+                    <p>Het is een bekend principe: de Trias Politica. Het opdelen van de macht in drie gedeelde machten: 
+                        wetgevend (bijv. De Tweede Kamer, gemeenteraad), rechtsprekend (rechters) en uitvoerend (Het Kabinet en de ministeries, College van Burgemeester en Wethouders). Het idee achter deze scheiding is het voorkomen van machtsmisbruik en bijvoorbeeld het snel overnemen van de staat door een dictatuur. Deze deling van machten is over het algemeen ook in bijvoorbeeld Amerika goed geregeld; dat is dan ook een van de redenen waarom Donald Trump zijn zin niet altijd even makkelijk doorgedrukt krijgt. Rechters bestempelen zijn decreten als zijnde in strijd met de grondwet en De Donald kan daar vervolgens niets meer aan doen.</p>
+                    <p>Democratie is misschien niet de beste, maar in ieder geval de minst slechte staatsvorm. En het scheiden van machten is daarin al eeuwenlang een best practice.  Des te verbazender dat we het volgende kunnen teruglezen op de website van Maasmechelen:</p>
+                    <p>"De gemeenteraad vertegenwoordigt de gehele bevolking van de gemeente en bestaat uit 33 leden. Ook de burgemeester en de schepenen maken deel uit van de gemeenteraad."</p>
+                    <p>De burgemeester van Maasmechelen heeft er het volgende over te zeggen:</p>
+                    <p>"Als er in Nederland iets verboden wordt, komen de problemen hier omhoog."</p>
+                    <p>Inderdaad, is onze conclusie dan ook. Het tegelijkertijd uitvoeren van meerdere politieke machten is Nederland al jarenlang verboden, maar de problemen vind je in Maasmechelen makkelijk terug. Conclusie: scheiding van machten in Maasmechelen geen prioriteit.</p>
+                    <p>Ons advies aan de lezer: zorg dat u altijd een kopie van Belgische Grondwet op zak draagt. Of u daarvan de Vlaamse of Waalse versie kiest is verder aan u.</p>
+                    <img class="img_no_header" src="images/img_rafje.png"/>
+                    <div class="img_bijschrift">
+                         <p>Raf Terwingen</p>
+                    </div>
+                    <h3>Rafje en de Grijze Wolven</h3>
+                    <p>Een volgende wending in dit verhaal vinden we in de persoon van Raf Terwingen. De heer Terwingen ("Rafje" voor zijn vrienden) is lid van de partij CD&V en tevens burgemeester van de gemeente Maasmechelen. Het feit dat hij naast burgemeester en gemeenteraadslid ook tegelijkertijd lid is van de Tweede Kamer van België laten we maar even achterwege om de nadruk te kunnen leggen op een belangrijker verhaal.</p>
+                    <img class="img_no_header" src="images/img_grijze-wolven.png"/>
+                    <div class="img_bijschrift">
+                         <p>Grijze wolven</p>
+                    </div>
+                    <p>Recentelijk raakte Raf in opspraak omdat hij bij een theekrans-sessie van de Grijze Wolven zou zijn aangehaakt. De Grijze Wolven (Turks: Bozkurtçular) is een extreemrechtse Turkse groepering. De Grijze Wolven staan bekend om hun racistische uitspraken en criminele activiteiten. Slecht nieuws dus voor Raf. De gemeenteraad heeft aangegeven de burgemeester "aan te zullen spreken" op zijn aanwezigheid. Of dat eufemistisch bedoeld is, is de schrijvers van dit stuk niet bekend.</p>
+                    <p>Ook ditmaal kunnen we kort zijn in ons advies: indien u Raf of een grijze wolf ziet, kunt u maar beter de andere kant op rennen. U bent gewaarschuwd!</p>
+                </div>
+                <div class="content_gebied content_geologie">
+                    <img src="images/img_geologie.png"/>
+                    <div class="header"><p>geologie</p></div>
+                    <div class="authors">
+                        <div><div class="sander"></div><p>Sander</p></div>
+                        <div><div class="anique"></div><p>Anique</p></div>
+                    </div>
+                    <h3>Het landschap van de Hoge Kempen</h3>
+                    <p>De Maas zette deze grote puinkegel in het Mindelglaciaal (465 tot 418 duizend jaar geleden) af. 
+                        Daarna ontstond een nieuwe, relatief diep uitgesleten vallei waar de Grensmaas zich een weg zocht door 
+                        haar eigen puin. De overgang van de Maasvallei naar het Kempens Plateau is erg steil en vormt een trap 
+                        van gemiddeld 45 meter. Deze steilrand loopt van Opoeteren (Maaseik) in het noorden tot Gellik (Lanaken) 
+                        in het zuiden, en vormt een ononderbroken lijn van ruim 20 kilometer lang, één van de spectaculairste 
+                        geologische fenomenen in het vlakke Vlaanderen. Ongeveer de helft van deze steilrand situeert zich in 
+                        het Nationaal Park Hoge Kempen. Bij Gellik bereikt het plateau een hoogte van 103 m terwijl het in Lommel 
+                        50 m boven de zeespiegel ligt.</p>
+                    <h3>Samenstelling van de bodem en Pleistocene vegetatie</h3>
+                    <p>In het zuidelijk deel treft men hoofdzakelijk grind en grof zand aan, in het noordelijk deel zand. Het is 
+                        grotendeels bedekt met een sediment. Dit is een dekzandlaagje aangevoerd door de wind in aanwezigheid van 
+                        sneeuw en afgezet, met een afwisseling van zand en sneeuwlaagjes. Als we goed zoeken kunnen we dus nog 
+                        sneeuwballen gooien.</p>
+                    <p>Er volgde een vegetatiearme periode in het Laatglaciaal (14.000 jaar vChr). Tijdens het Boreaal, het 
+                        Atlanticum en een deel van het Subboreaal (tot 2400 jaar vCHr) was het plateau bedekt met wouden. De 
+                        samenstelling van die wouden schommelde in functie van het heersende klimaat. Tijdens het Subboreaal 
+                        zette de ontbossing in ten gevolge van menselijke activiteiten die in het Subatlanticum leidde tot een 
+                        grote, bijna boomloze vlakte. Daarin was heide prominent aanwezig.</p>
+                    <p>Het plateau werd in de 19e eeuw kunstmatig bebost met naaldhout en meer specifiek de grove den, vooral voor 
+                        de steenkoolontginning in het Kempens Steenkolenbekken.</p>
+                    <p>Heidelandschappen komen nu nog enkel voor in de natuurreservaten (onder meer De Maten in Genk, de Teut in 
+                        Zonhoven, Tenhaagdoornheide in Houthalen) en in de grote militaire domeinen.</p>
+                    <h3>Erosie</h3>
+                    <p>Het Kempens Plateau heeft de erosie overleefd door de dikke grindlagen die de Maas tijdens het Neogeen 
+                        uit de Ardennen heeft aangevoerd. Lokale rivieren (dus niet Maas en Schelde) die tijdens het Vroeg 
+                        Pleistoceen sediment naar het Noorden afvoerden hebben in Nederland de Formatie van Stramproy afgezet.</p>
                 </div>
                 <div class="content_flora content_algemeen">
-                    <div class="header"><p>algemeen</p></div>
+                    <img src="images/img_flora_introductie.png"/>
+                    <div class="img_bijschrift">
+                        <p>Zicht vanuit het Kempensplateau naar de Vallei van Ziepbeek</p>
+                    </div>
+                    <div class="header"><p class="two-lines">Intro-</br>ductie</p></div>
+                    <div class="authors">
+                        <div><div class="gijs"></div><p>Gijs</p></div>
+                        <div><div class="lieke"></div><p>Lieke</p></div>
+                    </div>
+                    <h3>Introductie</h3>
+                    <p>De naam 'De Hoge Kempen' doet vermoeden dat we voor Nederland iets bijzonders gaan zien. 
+                        Zoveel 'hoogs' hebben we niet in Nederland. Bovendien ligt het gebied in een plek buiten onze 
+                        landsgrenzen, althans sinds 1831, en dat belooft ook veel nieuws. In dit stuk wat informatie over de 
+                        vegetatie (de algemene structuur gevormd door de dominerende plantensoorten zoals bomen en struiken) 
+                        en flora (typerende en bijzondere plantensoorten) zoals we die kunnen verwachten. Om een goede inschatting 
+                        en verklaring van de vegetatie en flora te kunnen geven moet er eerst iets gezegd worden over de ondergrond 
+                        van- en menselijke invloed op het gebied.</p>
+                    <p>De naam van het park de Hoge Kempen wordt ontleend aan het feit dat een groot deel van het park een stuk 
+                        hoger ligt dan de omgeving, en zeker hoger dan menig stukje Nederland. Het ligt namelijk op het 
+                        zogenaamde 'Kempensplateau', een plateau dat 90 tot wel 103 meter boven zeeniveau ligt. Honderd-en-drie 
+                        meter hoogte boven zeeniveau klinkt misschien niet erg hoog in vergelijking met bijvoorbeeld de bergen 
+                        in de Alpen, maar we zullen zien dat we met deze geringe hoogte al plantensoorten zullen treffen die 
+                        zich meer thuis voelen in bergen dan op het platteland zoals Nederland.</p>
+                    <p>De ontstaansgeschiedenis van dit Kempensplateau lijkt eigenlijk erg op die van de dalen en plateaus in 
+                        Zuid-Limburg. Voor een gedetailleerde uiteenzetting van deze geschiedenis wordt de lezer verwezen naar 
+                        het epos over het ontstaan van het Kempensplateau hier aanwezig in dit Veldweekend boekje, geschreven 
+                        door weledelzeergeleerde heer Sander H. van Schaik MSc. en weledelzeergeleerde mejuffrouw Anique Henderson 
+                        MSc. Wij volstaan hier met een korte samenvatting.</p>
+                    <h3>Ontstaan van het Kempensplateau in een notendop</h3>
+                    <p>Tijdens de laatste grote ijstijden zijn er door de Maas en de Rijn, die door deze gebieden stroomden als 
+                        zijnde brede en langzaam stromende rivieren, keien en stenen afkomstig van de Ardennen, afgezet. Deze 
+                        keien en stenen werden door verloop van tijd bedekt met dekzand. Later is dit hele gebied, Nederland 
+                        inclusief, gaan kantelen en zijn de nauwere en snelstromende rivieren delen van het zand gaan uitslijten, 
+                        waardoor er hoogteverschillen ontstonden. De uitgesleten delen worden nu 'dalen'' genoemd en de delen die 
+                        niet zijn uitgesleten 'plateaus'.</p>
+                    <p>De Hogekempen ligt voor het overgrote deel op het Kempensplateau en voor een klein deel op een stuk 
+                        uitgesleten dal, 'de Vallei van de Ziepbeek' genaamd. Op de rand van het plateau naar het dal toe 
+                        vinden we ook droogdalen, die zijn gevormd door ongelijke ontdooiing van permafrost aan het einde van 
+                        de afgelopen ijstijden.</p>
                 </div>
-                <div class="content_flora content_to_see">
-                    <div class="header"><p>to see</p></div>
+                <div class="content_flora content_arme_grond">
+                    <img src="images/img_flora_armegrond.png"/>
+                    <div class="img_bijschrift">
+                        <p>Schapen houden de heide- en grasvegetatie intact te Hoge Kempen</p>
+                    </div>
+                    <div class="header"><p class="two-lines">Arme</br>Grond</p></div>
+                    <div class="authors">
+                        <div><div class="gijs"></div><p>Gijs</p></div>
+                        <div><div class="lieke"></div><p>Lieke</p></div>
+                    </div>
+                    <h3>Arme grond maar rijk aan vegetatietypen</h3>
+                    <p>De samenstelling van keien, rotsen en zand maakt dat de grond van het Kempensplateau relatief 
+                        voedselarm is. Dit was ongeschikte grond voor landbouw en er werd daarom door de aanwezige mens 
+                        veel begrazing door schapen bedreven. De combinatie van een arme, zandige bodem met het houden van 
+                        schapen, resulteerde in een overwegend heideachtige vegetatie. Heide is van nature aardig droog en 
+                        haar planten zijn daarop aangepast, maar op plekken waar de grond slecht draineert vind men ook ‘natte 
+                        heide’ met de bijbehorende vochtminnende planten. Op plekken waar water stagneert vinden we ook vennen 
+                        en venen.</p>
+                    <p>De mens hield de heidevegetatie in stand door extensieve begrazing door schapen toe te passen en 
+                        'de fik dr in' te zetten wanneer de heidestruiken de sappige grassen en zeggen dreigden uit te 
+                        concurreren. Na 1800 werden er ook veel naaldbossen aangeplant om hout te kunnen leveren aan de 
+                        steenkolenmijnen die beroemd zijn (of waren) uit deze regio (Zuid-Limburg inclusief). Met de 
+                        steenkolenmijnindustrie zijn er ook een aantal landschapselementen gevormd die puur door de mens 
+                        zijn ontstaan, zoals grindplassen en mijnsteenbergen ('terrils'). Naast de naaldbossen komen er 
+                        ook kleine delen natuurlijk voorkomend loofbos voor, die de natuurlijke climaxvegetatie zijn van 
+                        de in stand gehouden heides.</p>
+                    <p>We vinden in dit gebied met arme grond dus een rijk scala aan vegetatietypen, veroorzaakt door de 
+                        ondergrond maar ook door de mens. </p>
+                </div>
+                <div class="content_flora content_vegetatietypen">
+                    <img src="images/img_flora_vegetatietypen.png"/>
+                    <div class="img_bijschrift">
+                        <p>Europees beschermde Drijvende waterweegbree (Luronium natans)</p>
+                    </div>
+                    <div class="header"><p class="two-lines">vegeta-</br>tietypen</p></div>
+                    <div class="authors">
+                        <div><div class="gijs"></div><p>Gijs</p></div>
+                        <div><div class="lieke"></div><p>Lieke</p></div>
+                    </div>
+                    <h3>Waarom is dit nu zo bijzonder?</h3>
+                    <p>De vegetatietypen zijn aardig bijzonder voor Europa omdat ze helaas zeldzaam zijn (geworden). Ze zijn 
+                        niet alleen zeldzaam voor Europa maar ook voor Nederland. Vroeger waren er eigenlijk veel gebieden in 
+                        Nederland bedekt met droge heide, natte heide, vennen en venen.</p>
+                    <p>Al deze gebieden hebben als belangrijkste kenmerk dat ze relatief nutriëntarm zijn. Met deze arme 
+                        omstandigheden komen er planten voor die zich hebben aangepast aan dit arme milieu. In de regel groeien 
+                        ze langzaam en worden ze niet hoog. Op deze planten hebben zich weer dieren gespecialiseerd waaronder 
+                        insecten zoals libellen en vertebraten zoals bepaalde vogels.</p>
+                    <p>Door de uitvinding van kunstmest en intensieve veehouderij is en wordt (!) veel van de Nederlandse en 
+                        Europese natuur 'verrijkt'' met nutriënten. Deze nutriënten worden bijvoorbeeld afgezet door de lucht 
+                        (o.a. stikstofdepositie) of uitgelekt via het oppervlaktewater. Dit heeft als gevolg dat de originele 
+                        planten en dieren worden weggeconcurreerd door anderen die meer zijn aangepast aan nutriëntrijkere 
+                        omstandigheden. Dit resulteert in dat de soorten bijhorend aan deze vegetatietypen, die ooit veel 
+                        voorkomend waren, nu zeldzaam zijn geworden en in enkele gevallen zelfs met uitsterven worden bedreigd.</p>
+                    <p>Met een bezoek aan de Hoge Kempen zie je niet alleen veel bijzondere flora en fauna, je maakt ook een 
+                        reis in de tijd naar vegetatietypen die vroeger normaal waren in Nederland.  Het gebied is daarom naast 
+                        een nationaal Belgisch park ook een Natura 2000 beschermd gebied. Er komt zelfs een plant voor die 
+                        dermate bedreigd is in Europa dat het is aangewezen voor bescherming op Europees niveau: de Drijvende 
+                        waterweegbree (Luronium natans) die typisch is voor zandige vennen (nutriëntarme wateren).</p>
+                </div>
+                <div class="content_flora content_planten">
+                    <img src="images/img_flora_planten_h.png"/>
+                    <div class="img_bijschrift">
+                        <p>Naaldbos te Hoge Kempen</p>
+                    </div>
+                    <div class="header"><p>soorten</p></div>
+                    <div class="authors">
+                        <div><div class="gijs"></div><p>Gijs</p></div>
+                        <div><div class="lieke"></div><p>Lieke</p></div>
+                    </div>
+                    <h3>Waarom is dit nu zo bijzonder?</h3>
+                    <p>Wat we het meeste zullen treffen zijn de droge heidevegetaties en naaldbossen. De naaldbossen zullen 
+                        relatief soortenarm zijn met veel Grove den (Pinus sylvestris) en Zwarte den (Pinus nigra).</p>
+                    <p>Typische soorten van de droge heidevegetatie die we zeker gaan zien zijn roze struiken van de 
+                        Struikheide (Calluna vulgaris) en Dopheide (Erica tetralix), maar ook de illustere jeneverbes 
+                        (Juniperus communis).  Mogelijk zien we ook af en toe de grote gele bloemen van de Stekelbrem 
+                        (Genista anglica).</p>
+                    <img class="img_no_header" src="images/img_flora_planten_heide.png"/>
+                    <div class="img_bijschrift">
+                        <p>Droge heide met struikheide in bloei (Calluna vulgaris), te Hoge Kempen</p>
+                    </div>
+                    <p>Op de natte heide zullen we hopelijk moeraswolfsklauw (Lycopodiella inundata) treffen, een vertegenwoordiger van een 
+                        fylum van planten uit de tijd van de Dinosauriën. Bijzondere soorten die we hier verder kunnen vinden zijn bijvoorbeeld 
+                        de prachtig blauwe klokjes van de Klokjesgentiaan (Gentiana pneumonanthe) en het blauw van de Liggende vleugeltjesbloem 
+                        (Polygala serpilifolium).</p>
+                    <p>Op menig plekken zullen de natte heides overgaan in venen. Op de venen zullen we hopelijk wat typische Veenpluis 
+                        (Eriophorum angustifolium) zien en misschien zelfs wat zeldzaams zoals de Veenorchis (Dactylorhiza sphagnicola), 
+                        Tengere heideorchis (Dactylorhiza maculata ssp. Elodes), Beenbreek (Narthecium ossifragum) en verschillende 
+                        zonnedauwsoorten (Drosera spp).</p>
+                    <img class="img_no_header" src="images/img_flora_planten_ven.png"/>
+                    <div class="img_bijschrift"><p>Natte heide / Veen met veenpluis (Eriophorum angustifoliu; witte bolletjes) en 
+                        Zonnedauw (Drosera sp.; rode plantjes net op het wateroppervlak), te Hoge Kempen Droge heide met 
+                        struikheide in bloei (Calluna vulgaris), te Hoge Kempen</p>
+                    </div>
+                    <p>Bij vennen zullen we naast het vertrouwede riet (Phragmites australis) wellicht ook het geluk hebben een 
+                        Drijvende waterweegbree (Luronium natans) te spotten. Zo niet, kunnen we al tevreden zijn wanneer we 
+                        het schattige maar eigenlijk carnivore Klein blaasjeskruid (Utricularia minor) ontmoeten. Op water 
+                        kan verder het groene Duizendknoopfonteinkruid (Potamogeton polygonifolius) en de statige Witte 
+                        waterlelie (Nymphea alba) groeien.</p>
+                    <p>Dit is slechts een greep uit de prachtige planten die we kunnen treffen. Voor vragen en opmerkingen 
+                        ter plekke kunt u terecht bij de auteurs.</p>
+                    <img class="img_no_header" src="images/img_flora_planten_ven2.png"/>
+                    <div class="img_bijschrift"><p>Ven te Hoge Kempen</p>
+                    </div>
                 </div>
                 <div class="content_fauna content_mammals">
-                    <div class="header"><p>zoogdieren</p></div>
+                    <img src="images/img_zoogdieren.jpg"/>
+                    <div class="header"><p class="two-lines">zoog-</br>dieren</p></div>
+                    <div class="authors">
+                        <div><div class="niek"></div><p>Niek</p></div>
+                    </div>
+                    <h3>Zoogdieren</h3>
+                    <p>In de Hoge Kempen zijn in totaal 31 verschillende zoogdiersoorten tegen te komen. Hieronder een korte beschrijving van een aantal hiervan:</p>
+                    <img class="img_no_header" src="images/img_ree.jpg"/>
+                    <h3>Ree - Capreolus capreolus</h3>
+                    <p>Leeft alleen of in kleine groepjes in bossen en struikgewas. Bij valavond verlaten ze hun schuilplaats om te grazen, maar vluchten bij het minste onraad weg. De volwassen mannetjes dragen in een klein gewei, dat ze elke winter verliezen en de volgende lente terug aangroeit.</p>
+                    <p>Voeding: planteneter </br>
+                    Biotoop: lichte bossen met ondergroei en open plekken en broekbossen </br>
+                    Maten: 110-130 cm lang, schouderhoogte 70-75 cm, gewicht 18-25 kg </br>
+                    Leeftijd: tot 10 jaar</p>
+                    <img class="img_no_header" src="images/img_eekhoorn.jpg"/>
+                    <h3>Eekhoorn - Sciurus vulgaris</h3>
+                    <p>Een echte acrobaat in de boomtoppen. Zijn pluimstaart helpt hem het evenwicht te bewaren als hij van tak naar tak springt. Bouwt zelf zijn nest in de toppen van dennenbomen. Het nest ziet er uit als een bolvormig, gesloten vogelnest en is te herkennen aan de groene dennentakjes die hij er in verwerkt.</p>
+                    <p>Voeding: planteneter </br>
+                    Biotoop: bossen op zandgronden met oude, hoge loof- en naaldbomen </br>
+                    Maten: 20-25 cm lang, staartlengte 15-20 cm, gewicht 300-400 g </br>
+                    Leeftijd: 7 tot 12 jaar</p>
+                    <img class="img_no_header" src="images/img_everzwijnen.jpg"/>
+                    <h3>Everzwijn - Sus scrofa</h3>
+                    <p>Hoewel in de Hoge Kempen en Voeren altijd kleine aantallen everzwijnen hebben geleefd, is deze soort in heel Vlaanderen, en vooral in Limburg, aan een opmars bezig. Door zijn gewroet met zijn krachtige snuit op zoek naar regenwormen, eikels en ander eetbaars, creëert hij de ideale omstandigheden voor het kiemen van boom- en plantenzaden.</p>
+                    <p>Voeding: alleseter </br>
+                    Biotoop: loof- en gemengde bossen met moerassige plaatsen </br>
+                    Maten: 120-160 cm lang, schouderhoogte 80-95 cm, gewicht 70-200 kg </br>
+                    Leeftijd: 9 tot 10 jaar</p>
+                    <img class="img_no_header" src="images/img_boommarter.jpg"/>
+                    <h3>Boommarter - Martes martes</h3>
+                    <p>Deze marter is heel wat groter dan de andere marters zoals bijvoorbeeld de bunzing. Hij heeft een bruine vacht en opvallende licht gekleurd borst. Hij jaagt op grotere dieren zoals bijvoorbeeld eekhoorns.</p>
+                    <p>Voeding: alleseter </br>
+                    Biotoop: rustige loofbossen en gemengd bos, ook in rotsige streken</br>
+                    Maten: 	40-58 cm lang, staartlengte 20-28 cm, gewicht ca. 1,3 kg</br>
+                    Leeftijd: 8 tot 10 jaar</p>
+                    <img class="img_no_header" src="images/img_vleermuis.jpg"/>
+                    <h3>Rosse Vleermuis - Nyctalus noctula</h3>
+                    <p>Door een dun huidvlies tussen de lange vingers van de armen, zijn vleermuizen zoogdieren die net als insecten en vogels kunnen vliegen. Vleermuizen jagen ‘s nachts op insecten en gebruiken daarvoor een eigen radarsysteem: ze zenden geluids- of ultrasone golven uit en door de weerkaatsing van deze golven op te vangen met de grote oren, weten ze precies waar hun prooi zich bevindt.</p>
+                    <p>Voeding: vleeseter </br>
+                    Biotoop: holle bomen, onder daken en in torens</br>
+                    Maten: 7-8cm lang, spanwijdte 36cm, gewicht 15-40g</br>
+                    Leeftijd: tot 8 jaar</p>
+                    <img class="img_no_header" src="images/img_vos.png"/>
+                    <h3>Vos - Vulpes vulpes</h3>
+                    <p>Als enige grote ‘roofdier’ in onze natuur, speelt de vos een essentiële rol. Hij jaagt vooral op zieke of verzwakte dieren en bewijst daarmee de soort waartoe die behoren een dienst: zo blijft de populatie gezond en wordt overpopulatie vermeden.</p>
+                    <p>Voeding: vleeseter </br>
+                    Biotoop: terrein met veel dekking zoals bossen, ook open gebied</br>
+                    Maten: 	50-90 cm lang, staartlengte 35-50 cm, gewicht 3-10 kg</br>
+                    Leeftijd: 3 tot 7 jaar</p>
+                    <img class="img_no_header" src="images/img_wezel.jpg"/>
+                    <h3>Wezel - Mustela nivalis</h3>
+                    <p>Dit is de kleinste van onze roofdieren. Nochtans durft hij prooien aan te vallen die groter zijn dan hemzelf, zoals konijnen. Wezels, met hun bruine rug en witte buik lijken op de grotere hermelijn. Naast de grootte, onderscheidt die zich van de wezel door een zwarte punt aan de staart.</p>
+                    <p>Voeding: vleeseter </br>
+                    Biotoop: droog terrein met voldoende schuilmogelijkheden</br>
+                    Maten: 15-25 cm lang, staartlengte 3-9 cm, gewicht 40-110 g</br>
+                    Leeftijd: 2 tot 5 jaar</p>
+                    <img class="img_no_header" src="images/img_bosmuis.jpg"/>
+                    <h3>Bosmuis - Apodemus sylvaticus</h3>
+                    <p>De bosmuis is bruiner en heeft opmerkelijk grotere oren en ogen dan de meer gekende huismuis. Die is grijzer, heeft kleinere oren en ogen en heeft een voorkeur voor schuurtjes en huizen. De bosmuis is zeer algemeen, maar blijft liever in het bos, heggen en houtkanten.</p>
+                    <p>Voeding: alleseter </br>
+                    Biotoop: bossen, open terrein met schuilmogelijkheden, ook in veengebieden</br>
+                    Maten: 8-10 cm lang, staartlengte 7-11 cm, gewicht 20-30 g</br>
+                    Leeftijd: 1 tot 4 jaar</p>
                 </div>
                 <div class="content_fauna content_birds">
-                    <img src="images/header_hoge_kempen_small.jpg"/>
                     <div class="header"><p>vogels</p></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis neque rutrum ligula bibendum, 
-                        non pretium augue tempus. Nam egestas purus in sollicitudin posuere. 
-                        Morbi dapibus justo nibh, vitae pellentesque quam consequat a. Suspendisse semper dignissim 
-                        elit sit amet posuere. Integer eget sem gravida, malesuada diam sit amet, maximus ex. Morbi laoreet 
-                        accumsan pretium. Morbi eu nisi aliquam, sollicitudin mi et, porta ex.</p>
-                    <p>Maecenas finibus ex nec leo ornare molestie. Aliquam erat volutpat. Pellentesque ac dolor sed felis 
-                        tristique tincidunt at quis diam. Phasellus vestibulum enim convallis risus ornare, eget elementum 
-                        est ultricies. Proin mollis a lectus molestie blandit. Mauris scelerisque at lacus sed consequat. 
-                        Maecenas ullamcorper purus nec hendrerit suscipit. Nullam at metus a odio viverra consectetur. 
-                        Sed eu diam commodo, mollis ipsum sit amet, gravida ante. Suspendisse consequat rhoncus purus 
-                        eget dapibus.</p>
-                    <p>Quisque eget eros ex. Nulla vitae dictum massa. Aliquam porta eu libero nec sollicitudin. Nullam volutpat 
-                        ante nec suscipit fringilla. Integer purus libero, finibus non mollis sit amet, iaculis sed ligula. 
-                        Phasellus iaculis molestie dui, cursus tincidunt mi rhoncus sit amet. Integer ipsum ante, aliquet ac 
-                        pretium at, rutrum sit amet nulla. Nam ac eleifend felis. Proin tempor a enim id cursus. Pellentesque 
-                        condimentum erat at nisi faucibus suscipit. Sed at aliquet erat, eget interdum dui. In consequat massa 
-                        vitae enim cursus, vitae egestas lacus interdum. Aliquam mauris orci, posuere at dolor nec, laoreet finibus 
-                        erat. In porttitor est auctor urna dignissim faucibus vel sit amet libero. Aenean rutrum metus a 
-                        ultricies mattis. Sed efficitur sem vitae laoreet hendrerit.</p>
+                    <div class="authors">
+                        <div><div class="rascha"></div><p>Rascha</p></div>
+                    </div>
+                    <div class="species">
+                        <div class="wespendief">
+                            <p class="two-lines">wespen-</br>dief</p>
+                        </div>
+                        <div class="zwartespecht">
+                            <p class="two-lines">zwarte specht</p>
+                        </div>
+                        <div class="boomleeuwerik">
+                            <p class="two-lines">boom-</br>leeuwerik</p>
+                        </div>
+                    </div>
+                    <div class="subcontent_birds content_birds_intro">
+                        <img src="images/img_vogels.jpg"/>
+                        <h3>Vogels</h3>
+                        <p>Nationaal park de Hoge Kempen, voornamelijk de sub-gebieden de Mechelse Heide en de Vallei van de Ziepbeek, is een beschermd natuurgebied (onder andere) in het kader van de Europese Vogelrichtlijn. Argumenten voor het aanwijzen van dit gebied zijn het broeden van roerdomp, wespendief, bruine kiekendief, korhoen, nachtzwaluw, ijsvogel, zwarte specht, boomleeuwerik en blauwborst. Daarnaast gebruiken migrerende vogels zoals de kraanvogel, visarend en blauwe kiekendief het gebied onderweg.</p>
+                        <p>Een aantal van deze soorten komen we hopelijk tegen, daarom een kort portretje van hen.</p>
+                    </div>
+                    <div class="subcontent_birds content_wespendief">
+                        <img src="images/img_wespendief.png"/>
+                        <audio controls>
+                            <source src="sounds/wespendief.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <h3>Wespendief (Pernis apivorus; 52-60 cm, spanwijdte 118-150 cm)</h3>
+                        <p>De wespendief dankt zijn naam aan zijn unieke voedselvoorkeur onder roofvogels: larven, poppen, volwassen wespen en honing. Om zichzelf te beschermen tegen gemene steken heeft deze soort een hoge dichtheid van extra stevige veren op de kop en een dikke huid op de poten. De wespendief is alleen in de zomer in Europa, en overwinterd ten zuiden van de Sahara.</p>
+                        <img class="img_no_header" src="images/img_wespendief_tracks.png"/>
+                        <div class="img_bijschrift"><p>Vansteelant et al. 2017.</p>
+                        </div>
+                        <p>Kenmerken volgens de Vogelbescherming zijn:</p>
+                        <ul>
+                            <li>Buizerdachtig, maar met langere staart met scherpere hoeken</li>
+                            <li>Smalle, uitstekende kop</li>
+                            <li>Langere handvleugel (dan de buizerd)</li>
+                            <li>Houdt vleugels niet in zwakke V tijdens drijfvlucht (itt buizerd) en vliegt met soepele vleugelslagen</li>
+                            <li>Staart met drie dwarsbanden (vier bij juvenielen)</li>
+                        </ul>
+                    </div>
+                    <div class="subcontent_birds content_zwartespecht">
+                        <img src="images/img_zwartespecht.png"/>
+                        <audio controls>
+                            <source src="sounds/zwartespecht_call.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <audio controls>
+                            <source src="sounds/zwartespecht_drumming.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <h3>Zwarte specht (Dryocopus martius; 45-55 cm, spanwijdte 64-68 cm)</h3>
+                        <p>De zwarte specht is een van de schuwere spechtensoorten, die snel wegvliegt als je hem nadert. Hij is een heuse ‘bosbouwer’ (of ‘ecosystem engineer’?) en hakt bijna ieder jaar een nieuw nest uit in een oude boom. De oude nesten worden gebruikt door onder andere bosuilen en boommarters.</p>
+                        <p>Kenmerken volgens de Vogelbescherming:</p>
+                        <ul>
+                            <li>Grote zwarte vogel met een rode kruin (bij vrouw alleen achterhoofd)</li>
+                            <li>Vliegt als een gaai (flapperend in een rechte lijn, niet golvend zoals andere spechten</li>
+                            <li>Zware en harde roffel</li>
+                            <li>In vlucht een luid “KruKruKruKru”</li>
+                        </ul>
+                    </div>
+                    <div class="subcontent_birds content_boomleeuwerik">
+                        <img src="images/img_boomleeuwerik.png"/>
+                        <audio controls>
+                            <source src="sounds/boomleeuwerik.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <h3>Boomleeuwerik (Lullula arborea; 13,5-15 cm)</h3>
+                        <p>De boomleeuwerik heeft van alle leeuweriken de kortste staart. Ondanks zijn naam kom je hem vaak tegen op zandgronden, de heide of stuifzand. Meestal hoor je hem echter voordat je hem ziet. Vliegt in balts hoog in kringen boven zijn territorium en ‘dwarrelt’ in een spiraal naar beneden.</p>
+                        <p>Kenmerkgen volgens de Vogelbescherming:</p>
+                        <ul>
+                            <li>Korte kuif</li>
+                            <li>Opvallende lichte wenkbrauwstreep</li>
+                            <li>Aan de basis van de vleugel een opvallend (en uniek) zwart wit vlekje</li>
+                            <li>Geen uiterlijk verschil tussen mannetje en vrouwtje</li>
+                            <li>Vliegt op met meerlettergrepige roep met heldere fluittonen en zonder "r"</li>
+                            <li>Prachtige, melancholieke zang, met vele lange reeksen van dalende, warme klanken. In vlucht of in zit. Roep drie lettergrepig "tie-de-dlie", in allerlei variaties</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="content_fauna content_insects">
-                    <div class="header"><p>insecten</p></div>
-                </div>
-                <div class="content_fauna content_fish">
-                    <div class="header"><p>vissen</p></div>
+                <div class="content_fauna content_overig">
+                    <img src="images/img_overig.jpg"/>
+                    <div class="header"><p>overig</p></div>
+                    <div class="authors">
+                        <div><div class="niek"></div><p>Niek</p></div>
+                    </div>
+                    <h3>Overige dieren</h3>
+                    <p>In het Nationaal Park Hoge Kempen, in het oosten van Limburg, leven meer dan 7 000 verschillende diersoorten. Deze diersoorten kan je onderverdelen in verschillende groepen. In de grafiek wordt getoond hoeveel soorten er in elke groep voorkomen. Van veel vliegende insecten is dat aantal zelfs niet bekend, maar we weten dat het er zeker meer dan 1 000 zijn. Die getallen gaan over het aantal verschillende soorten, dus niet over het aantal dieren van een bepaalde soort.</p>
+                    <img class="img_no_header" src="images/img_biodiversiteit.png"/>
+                    <p>De biodiversiteit is dus erg hoog in het Nationaal Park Hoge Kempen. Hieronder worden nog een aantal soorten beschreven die je in de Hoge Kempen kan tegenkomen die geen vogel of zoogdier zijn:</p>
+                    <img class="img_no_header" src="images/img_gladdeslang.jpg"/>
+                    <h3>Gladde Slang - Coronella austriaca</h3>
+                    <p>Dit is naast de ringslang en de adder, onze derde inheems slang. Het is een typische soort van de Hoge Kempen, en haar voorkomen in Vlaanderen is tot de Kempen beperkt. Lijkt sterk op de giftige adder. Net als de andere slangen, is de gladde slang zeer zeldzaam en schuw.</p>
+                    <p>Klasse: reptiel</br>
+                    Voeding: hagedissen, muizen, spitsmuizen </br>
+                    Biotoop: open, laag begroeid terrein zoals heidegebied</br>
+                    Maten: lengte 50-70 cm</br>
+                    Leeftijd: 15 tot 20 jaar</p>
+                    <img class="img_no_header" src="images/img_levendbarendehagedis.JPG"/>
+                    <h3>Levendbarende Hagedis - Zootoca vivipara</h3>
+                    <p>Dat dit reptiel geen eieren heeft maar de jongen levend op de wereld zet, is maar schijn. In feite worden de eitjes uitgebroed in lichaam van de moeder. De staart van deze hagedis breekt zonder veel gevolg voor het dier bij de minste aanraking af, waarbij de staart nog een tijdje verder kronkelt als een wormpje. Het ideale afleidingsmanoeuvre voor belagers.</p>
+                    <p>Klasse: reptiel</br>
+                    Voeding: spinnen, insecten</br>
+                    Biotoop: zandige gebieden, heidevelden, open bossen</br>
+                    Maten: lichaamslengte 4-7 cm; staartlengte 1,4- 2 keer de lichaamslengte</br>
+                    Leeftijd: 7 tot 8 jaar</p>
+                    <img class="img_no_header" src="images/img_alpenwatersalamander.jpg"/>
+                    <h3>Alpenwatersalamander - Mesotriton alpestris</h3>
+                    <p>Van bovenuit bekeken is deze salamander nauwelijks te onderscheiden van de modderige bodem van een poel, maar zijn buik is fel oranje gekleurd. Net als elk amfibie is hij actief zowel in het water als op het land.</p>
+                    <p>Klasse: amfibie</br>
+                    Voeding: kleine ongewervelden en insecten, in en om het water</br>
+                    Biotoop: vochtig, koel terrein in bosgebied en bergdalen</br>
+                    Maten: lengte tot 12 cm</br>
+                    Leeftijd: tot 20 jaar</p>
+                    <img class="img_no_header" src="images/img_groenekikker.jpg"/>
+                    <h3>Groene Kikker - Pelophylax spec.</h3>
+                    <p>Er zijn meerdere soorten groene kikkers, maar ze van elkaar onderscheiden is werk voor specialisten. Met een ‘kwaakblaas’ houden ze heuse kikkerconcerten in poelen.</p>
+                    <p>Klasse: amfibie</br>
+                    Voeding: insecten, spinnen, slakken, wormen</br>
+                    Biotoop: voedselarm, lichtzuur, zonnig stilstaand water</br>
+                    Maten: lengte tot 8 cm</br>
+                    Leeftijd: 1 tot 2 jaar</p>
+                    <img class="img_no_header" src="images/img_gewonepad.jpg"/>
+                    <h3>Gewone Pad - Bufo bufo</h3>
+                    <p>Wie zijn tuin natuurvriendelijk inricht, heeft zeker een pad te gast. Ze houden zich schuil tussen takken en dorre bladeren waar ze zich tegen uitdrogen kunnen beschermen. Enkel voor hun voortplanting trekken ze vanuit alle tuinen, hoeken en kanten tijdens een massale ‘paddentrek’ in het vroege voorjaar naar hun poel waar ze zelf werden geboren</p>
+                    <p>Klasse: amfibie</br>
+                    Voeding: insecten, spinnen, wormen, naaktslakken</br>
+                    Biotoop: droog, bosachtig terrein; dieper open water voor voortplanting</br>
+                    Maten: lengte 8-10 cm</br>
+                    Leeftijd: 10-12 jaar</p>
+                    <img class="img_no_header" src="images/img_veldkrekel.jpg"/>
+                    <h3>Veldkrekel - Gryllus campestris</h3>
+                    <p>Krekels krijg je vaker te horen dan te zien. Het kenmerkende ‘tsjirpen’ doen ze door hun vleugel over elkaar te wrijven. Ze zijn in tegenstelling tot de overwegend groene of bruine sprinkhanen, bijna zwart en hebben minder uitgesproken springpoten.</p>
+                    <p>Klasse: insect</br>
+                    Voeding: zaden, droge en verse planten, kleine dode en levende insecten</br>
+                    Biotoop: droog, zonnig terrein met lage begroeiing</br>
+                    Maten:  1,7-2,6 cm</br>
+                    Leeftijd: tot 3 maanden</p>
+                    <img class="img_no_header" src="images/img_zadelsprinkhaan.jpg"/>
+                    <h3>Zadelsprinkhaan - Ephippiger ephippiger</h3>
+                    <p>Deze forse sprinkhaan is een typische soort van de Hoge Kempen, en komt in Vlaanderen bijna uitsluitend hier voor. Er zijn tientallen soorten sprinkhanen, die allemaal de forse springpoten gemeenschappelijk hebben.</p>
+                    <p>Klasse: insect</br>
+                    Voeding: grassen</br>
+                    Biotoop:  warme, droge, ruig begroeide terrein, warme hellingen</br>
+                    Maten: lengte 2,2-3 cm</br>
+                    Leeftijd: tot 1 jaar</p>
+                    <img class="img_no_header" src="images/img_tijgerspin.jpg"/>
+                    <h3>Tijgerspin - Argiope bruennichi </h3>
+                    <p>Een nieuwkomer onder de spinnen in onze streken die mogelijks door een verandering van het klimaat aan een opmars bezig is. Hij wordt ook wel wespenspin genoemd en naast zijn uitgesproken zwart-gele streepjespak, is hij ook te herkennen aan zijn spinnenwebben: die bevatten een witte zigzaggende draad van samengeklit spinrag.</p>
+                    <p>Klasse: spinachtige</br>
+                    Voeding: springende en laagvliegende insecten</br>
+                    Biotoop: zonnige open plekken met lage begroeiing</br>
+                    Maten: lijf mannetje: 5 mm; lijf vrouwtje: 18 mm</br>
+                    Leeftijd: 1-2 jaar</p>
+                    <img class="img_no_header" src="images/img_grotekeizerlibel.JPG"/>
+                    <h3>Grote Keizerlibel - Anax imperator</h3>
+                    <p>Dit is één van de grootste libellen. Ze lijken wel op een kleine helikopter als ze door de zomerse avondlucht vliegen. Op het lange achterlijf hebben ze een patroon met opvallende kleuren. De verschillende libellen-soorten zijn te herkennen aan hun verschillende kleuren en patronen, van blauw, geel tot koraalrood.</p>
+                    <p>Klasse: insect</br>
+                    Voeding: kleine voornamelijk vliegende insecten</br>
+                    Biotoop: stilstaand water, vooral op zandgrond</br>
+                    Maten: spanwijdte 9-10,5 cm</br>
+                    Leeftijd: tot 3 jaar</p>
+                    <img class="img_no_header" src="images/img_groenezandloopkever.jpg"/>
+                    <h3>Groene Zandloopkever - Cicindela campestris</h3>
+                    <p>Met hun lange poten lopen zandloopkevers zeer snel over het warme zand. Net als alle kevers, hebben ze onder hun harde dekschilden een paar vleugels, waardoor ze niet alleen rennen, maar ook best goed kunnen vliegen.</p>
+                    <p>Klasse: insect</br>
+                    Voeding: kleine insecten</br>
+                    Biotoop: losse zandige bodem, duinen, heide</br>
+                    Maten: lengte 16 mm</br>
+                    Leeftijd: tot 5 jaar</p>
                 </div>
             </div>
 
@@ -84,23 +588,27 @@
                     <div class="sudoku"><p>sudoku</p></div>
                     <div class="zoeker"><p>zoeker</p></div>
                 </div>
-                <div class="sm_camping">
-                    <div class="ligging"><p>ligging</p></div>
-                    <div class="cmp_informatie"><p>informatie</p></div>
-                    <div class="contact"><p>contact</p></div>
+                <div class="sm_programma">
+                    <div class="camping"><p>camping</p></div>
+                    <div class="schema"><p>schema</p></div>
+                    <div class="routes"><p>routes</p></div>
                 </div>
                 <div class="sm_area">
                     <div class="gb_informatie"><p>informatie</p></div>
+                    <div class="maastricht"><p class="two-lines">maas-</br>tricht</p></div>
+                    <div class="politiek"><p>politiek</p></div>
+                    <div class="geologie"><p>geologie</p></div>
                 </div>
                 <div class="sm_flora">
-                    <div class="algemeen"><p>algemeen</p></div>
-                    <div class="to_see"><p>to see</p></div>
+                    <div class="algemeen"><p class="two-lines">intro-</br>ductie</p></div>
+                    <div class="arme_grond"><p class="two-lines">arme</br>grond</p></div>
+                    <div class="vegetatietypen"><p class="two-lines">vegeta-</br>tietypen</p></div>
+                    <div class="planten"><p>soorten</p></div>
                 </div>
                 <div class="sm_fauna">
-                    <div class="mammals"><p>zoogdieren</p></div>
+                    <div class="mammals"><p class="two-lines">zoog-</br>dieren</p></div>
                     <div class="birds"><p>vogels</p></div>
-                    <div class="insects"><p>insecten</p></div>
-                    <div class="fish"><p>vissen</p></div>
+                    <div class="overig"><p>overig</p></div>
                 </div>
             </div>
             <div id="footer">
@@ -117,10 +625,10 @@
                             ONDERWEG</p>
                         </strong>
                     </a></li>
-                    <li class="camping"><a href="#">
+                    <li class="programma"><a href="#">
                         <strong>
-                            <p><i class="fa fa-fire" aria-hidden="true"></i>
-                            CAMPING</p>
+                            <p><i class="fa fa-tasks" aria-hidden="true"></i>
+                            PROGRAMMA</p>
                         </strong>
                     </a></li>
                     <li class="area"><a href="#">
@@ -148,5 +656,7 @@
         <container class="showMobile">
             <p>Kijk lelijke kleur!!</p>
         </container>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKZpsmGw73xsIMUKI-d65N8pH0_u7X90E"
+        async defer></script>
    </BODY>
 </HTML>

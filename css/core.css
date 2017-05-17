@@ -66,14 +66,44 @@ body {
     overflow: scroll;
 }
 
+.content_routes {
+    height: calc(100%);
+}
+
 #content img {
     margin: 100px 10% 0 10%;
     width: 80%;
 }
 
-#content p {
+#content audio {
     margin: 0 10% 0 10%;
     width: 80%;
+}
+
+.wespendief {
+    z-index: 1000;
+}
+
+#content img.img_no_header {
+    margin: 0 10% 0 10%;
+}
+
+#content img.img_species {
+    margin: -30px 10% 0 10%;
+}
+
+#content img.img_interview {
+    margin: -12px 10% 0 10%;
+}
+
+#content p,
+#content h3 {
+    margin: 0 10% 10px 10%;
+    width: 80%;
+}
+
+#content ul {
+    margin: 0 10% 10px 0;
 }
 
 #sudoku_container {
@@ -89,6 +119,7 @@ body {
 }
 
 #content .header {
+    z-index: 2;
     position: absolute;
     top: 75px;
     left: calc(50% - 25px);
@@ -99,31 +130,68 @@ body {
     border-radius: 25px; 
 }
 
-#content .header p {
+#content .authors {
+    position: absolute;
+    top: 130px;
+    left: calc(10% - 25px);
+    width: 130px;
+}
+
+#content .authors div div,
+#content .species div,
+#content .routes div  {
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 25px; 
+    -moz-border-radius: 25px; 
+    border-radius: 25px; 
+    float: left;
+    margin-bottom: 5px;
+}
+
+#content .routes {
+    z-index: 2;
+}
+
+#content .authors div p {
+    padding: 14px 0;
+}
+
+#content .header p{
     text-align: center;
 }
 
-#content .content_onderweg .header {
-    background-color: #f2c500;
+.img_bijschrift {
+    text-align: center;
+    color: #ffffff;
+    margin-top: -8px !important;
 }
+
 
 #content .content_onderweg .header {
     background-color: #f2c500;
 }
 
-#content .content_fauna .header {
+#content .content_onderweg .header {
+    background-color: #f2c500;
+}
+
+#content .content_fauna .header,
+.content_fauna .img_bijschrift {
     background-color: #e94b35;
 }
 
-#content .content_camping .header {
+#content .content_programma .header {
     background-color: #1fce6d;
 }
 
-#content .content_gebied .header {
+#content .content_gebied .header,
+.content_gebied .img_bijschrift {
     background-color: #e87e04;
 }
 
-#content .content_flora .header {
+#content .content_flora .header,
+.content_flora .img_bijschrift {
     background-color: #2c97de;
 }
 
@@ -131,10 +199,104 @@ body {
     background-color: #e94b35;
 }
 
-#content .header p {
+#content .authors div {
+    background-color: rgba(255,255,255,0.6);
+    -webkit-border-radius: 25px; 
+    -moz-border-radius: 25px; 
+    border-radius: 25px; 
+}
+
+#content .content_flora .authors .gijs {
+    margin-right: 5px;
+    background: url(../images/img_gijs.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_flora .authors .lieke {
+    margin-right: 5px;
+    background: url(../images/img_lieke.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_gebied .authors .sander {
+    margin-right: 5px;
+    background: url(../images/img_sander.jpg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_gebied .authors .anique {
+    margin-right: 5px;
+    background: url(../images/img_anique.jpg) no-repeat; 
+    background-size: 50px 75px; 
+}
+
+#content .content_gebied .authors .ike {
+    margin-right: 5px;
+    background: url(../images/img_ike.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_gebied .authors .jelmer {
+    margin-right: 5px;
+    background: url(../images/img_jelmer.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_gebied .authors .catharina {
+    margin-right: 5px;
+    background: url(../images/img_catharina.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_gebied .authors .marjolein {
+    margin-right: 5px;
+    background: url(../images/img_marjolein.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_fauna .authors .rascha {
+    margin-right: 5px;
+    background: url(../images/img_rascha.jpeg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .content_fauna .authors .niek {
+    margin-right: 5px;
+    background: url(../images/img_niek.jpg) no-repeat; 
+    background-size: 50px 50px; 
+}
+
+#content .header p,
+#content .species p,
+#content .routes p {
+    width: 50px;
+    text-align: center;
     margin: 0;
-    line-height: 50px;
+    font-size: 12px;
+    margin-top: 16px;
     color: #ffffff;
+}
+
+#content .species,
+#content .routes {
+    position: absolute;
+    right: calc(10% - 25px );
+    top: 130px;
+    width: 50px;
+    height: 160px;
+}
+
+#content .species div {
+    background-color: #e94b35;
+}
+
+#content .routes div {
+    background-color: #1fce6d;
+}
+
+#content .header p.two-lines,
+#content .species div p.two-lines {
+    margin-top: 7px;
 }
 
 #submenu {
@@ -165,27 +327,27 @@ body {
     width: 120px;
 }
 
-.sm_camping {
+.sm_programma {
     width: 180px;
 }
 
 .sm_area {
-    width: 58px;
+    width: 240px;
 }
 
 .sm_flora {
-    width: 120px;
+    width: 240px;
 }
 
 .sm_fauna {
-    width: 240px;
+    width: 180px;
 }
 
 .sm_onderweg div {
     background-color: #f2c500;
 }
 
-.sm_camping div {
+.sm_programma div {
     background-color: #1fce6d;
 }
 
@@ -202,9 +364,16 @@ body {
 }
 
 #submenu div p {
+    width: 50px;
+    text-align: center;
     margin: 0;
-    line-height: 50px;
+    margin-top: 16px;
+    font-size: 12px;
     color: #ffffff;
+}
+
+#submenu div p.two-lines {
+    margin-top: 7px;
 }
 
 #footer .smallmenu {
@@ -239,7 +408,7 @@ body {
     background-color: #f2c500;
 }
 
-#footer li.camping {
+#footer li.programma {
     background-color: #1fce6d;
 }
 
@@ -264,4 +433,10 @@ body {
     font-size: 30px;
     margin: 0;
     padding: 7px 0;
+}
+
+#map,
+#mapTwo {
+    z-index: 1;
+    height: 100%;
 }

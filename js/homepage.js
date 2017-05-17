@@ -3,14 +3,16 @@ $(document).ready(function(){
     
     $("#submenu > div").hide();
     $("#content > div").hide();
+    $('.subcontent_birds').hide();
     $(".menu").click(function() {
         toggleNav();
     });
     $(".onderweg").click(function() {
         openSubmenu(1);
     });
-    $(".camping").click(function() {
+    $(".programma").click(function() {
         openSubmenu(2);
+        $('.sm_programma').css('z-index', '2');
     });
     $(".area").click(function() {
         openSubmenu(3);
@@ -30,35 +32,75 @@ $(document).ready(function(){
     $(".zoeker").click(function() {
         openContent("zoeker");
     });
-    $(".ligging").click(function() {
-        openContent("ligging");
+    $(".camping").click(function() {
+        openContent("camping");
     });
-    $(".cmp_informatie").click(function() {
-        openContent("cmp_informatie");
+    $(".schema").click(function() {
+        openContent("schema");
     });
-    $(".contact").click(function() {
-        openContent("contact");
+    $(".routes").click(function() {
+        openContent("routes");
+        $('.map').hide();
+        initializeFirstRoute();
+    });
+    $(".route_second").click(function() {
+        $('.map').hide();
+        $('#mapTwo').show();
+        initializeSecondRoute();
     });
     $(".gb_informatie").click(function() {
         openContent("gb_informatie");
     });
+    $(".maastricht").click(function() {
+        openContent("maastricht");
+    });
+    $(".politiek").click(function() {
+        openContent("politiek");
+    });
+    $(".geologie").click(function() {
+        openContent("geologie");
+    });
     $(".algemeen").click(function() {
         openContent("algemeen");
     });
-    $(".to_see").click(function() {
-        openContent("to_see");
+    $(".arme_grond").click(function() {
+        openContent("arme_grond");
+    });
+    $(".vegetatietypen").click(function() {
+        openContent("vegetatietypen ");
+    });
+    $(".planten").click(function() {
+        openContent("planten");
     });
     $(".mammals").click(function() {
         openContent("mammals");
     });
     $(".birds").click(function() {
+        $('.subcontent_birds').hide();
+        $('.content_birds_intro').show();
         openContent("birds");
     });
-    $(".insects").click(function() {
-        openContent("insects");
+    $(".overig").click(function() {
+        openContent("overig");
     });
-    $(".fish").click(function() {
-        openContent("fish");
+    $(".wespendief").click(function() {
+        $('.subcontent_birds').hide();
+        $(".content_wespendief").show();
+    });
+    $(".zwartespecht").click(function() {
+        $('.subcontent_birds').hide();
+        $(".content_zwartespecht").show();
+    });
+    $(".boomleeuwerik").click(function() {
+        $('.subcontent_birds').hide();
+        $(".content_boomleeuwerik").show();
+    });
+    $('#uithangt').click(function() {
+        $('.onderwegbent').hide();
+    });
+
+    $('#onderwegbent').click(function() {
+        $('.uithangt').hide();
     });
 });
 var activeMenu = 0;
@@ -140,5 +182,78 @@ function openContent(content_tab) {
     });
     $(".sm_onderweg").first().hide("fast", function showNext() {
         $( this ).next( "div" ).hide( "fast", showNext );
+    });
+}
+
+function initializeFirstRoute() {
+
+    var directionsDisplay;
+    var directionsService = new google.maps.DirectionsService();
+    var map;
+
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    var mapOptions = {
+        center: {lat: 50.903535, lng: 5.633004},
+        zoom: 13,
+        mapTypeId: 'satellite'
+    }
+    map = new google.maps.Map(document.getElementById('map'), mapOptions);
+    directionsDisplay.setMap(map);
+    var request = {
+        origin: {lat: 50.903535, lng: 5.633004},
+        destination: {lat: 50.903535, lng: 5.633004},
+        waypoints: [
+            {
+                location: {lat: 50.850033, lng: 5.688860},
+                stopover: true
+            },
+            {
+                location: {lat: 50.821066, lng: 5.685999},
+                stopover: false
+            },
+            {
+                location: {lat: 50.850094, lng: 5.675754},
+                stopover: false
+            },
+            {
+                location: {lat: 50.875961, lng: 5.662337},
+                stopover: false
+            }
+        ],
+        travelMode: 'WALKING',
+        unitSystem: google.maps.UnitSystem.IMPERIAL
+    };
+    directionsService.route(request, function(result, status) {
+        if (status == 'OK') {
+            directionsDisplay.setDirections(result);
+        }
+    });
+}
+
+function initializeSecondRoute() {
+    var directionsDisplay;
+    var directionsService = new google.maps.DirectionsService();
+    var map;
+
+    directionsDisplay = new google.maps.DirectionsRenderer();
+    var mapOptions = {
+        center: {lat: 50.903535, lng: 5.633004},
+        zoom: 13,
+        mapTypeId: 'satellite'
+    }
+    map = new google.maps.Map(document.getElementById('mapTwo'), mapOptions);
+    directionsDisplay.setMap(map);
+    var request = {
+        origin: {lat: 50.906948, lng: 5.639857},
+        destination: {lat: 50.927243, lng: 5.635093},
+        waypoints: [
+        ],
+        travelMode: 'WALKING',
+        unitSystem: google.maps.UnitSystem.IMPERIAL
+    };
+    directionsService.route(request, function(result, status) {
+        if (status == 'OK') {
+            directionsDisplay.setDirections(result);
+        }
     });
 }
