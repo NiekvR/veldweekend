@@ -64,6 +64,7 @@ body {
     width: 100%;
     background-color: #ffffff;
     overflow: scroll;
+    -webkit-overflow-scrolling:touch
 }
 
 .content_routes {
@@ -328,7 +329,7 @@ body {
 }
 
 .sm_programma {
-    width: 180px;
+    width: 240px;
 }
 
 .sm_area {
@@ -377,6 +378,7 @@ body {
 }
 
 #footer .smallmenu {
+    z-index: 3;
     font-size: 30px;
     position: absolute;
     bottom: 0px;
@@ -385,6 +387,7 @@ body {
 }
 
 #footer ul {
+    z-index: 3;
     width: 100%;
     height: 300px;
     position: absolute;
@@ -435,8 +438,38 @@ body {
     padding: 7px 0;
 }
 
-#map,
-#mapTwo {
+#map {
     z-index: 1;
     height: 100%;
+}
+
+#mapCamping {
+    z-index: 1;
+    height: 400px;
+}
+
+.content_zoeker {
+    height: 100%;
+}
+
+.searchImg.top {
+    margin-top: 100px;
+}
+
+.searchImg {
+    width: 32.70%;
+    height: calc(25% - 23px);
+    vertical-align: middle;
+    text-align: center;
+    border: solid black 1px;
+    float: left;
+}
+
+.searchImg i {
+    margin-top: 15px;
+    font-size: 50px;
+}
+
+.zoekerp {
+    font-size: 12px;
 }

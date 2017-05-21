@@ -34,20 +34,54 @@ $(document).ready(function(){
     });
     $(".camping").click(function() {
         openContent("camping");
+        initializeCampingMap();
+    });
+    $(".weather").click(function() {
+        openContent("weather");
     });
     $(".schema").click(function() {
         openContent("schema");
     });
     $(".routes").click(function() {
         openContent("routes");
-        $('.map').hide();
-        $('#map').show();
-        initializeFirstRoute();
+        initializeMap();
+        firstRoute();
+    });
+    $(".route_first").click(function() {
+        firstRoute();
     });
     $(".route_second").click(function() {
-        hideMaps();
-        $('#mapTwo').show();
-        initializeSecondRoute();
+        secondRoute();
+    });
+    $(".route_third").click(function() {
+        thirdRoute();
+    });
+    $(".route_fourth").click(function() {
+        fourthRoute();
+    });
+    $('.first-route').click(function(e) {
+        e.preventDefault();
+        openContent("routes");
+        initializeMap();
+        firstRoute();
+    });
+    $('.second-route').click(function(e) {
+        e.preventDefault();
+        openContent("routes");
+        initializeMap();
+        secondRoute();
+    });
+    $('.third-route').click(function(e) {
+        e.preventDefault();
+        openContent("routes");
+        initializeMap();
+        thirdRoute();
+    });
+    $('.four-route').click(function(e) {
+        e.preventDefault();
+        openContent("routes");
+        initializeMap();
+        fourthRoute();
     });
     $(".gb_informatie").click(function() {
         openContent("gb_informatie");
@@ -96,6 +130,10 @@ $(document).ready(function(){
         $('.subcontent_birds').hide();
         $(".content_boomleeuwerik").show();
     });
+    $(".oehoe").click(function() {
+        $('.subcontent_birds').hide();
+        $(".content_oehoe").show();
+    });
     $('#uithangt').click(function() {
         $('.onderwegbent').hide();
     });
@@ -103,6 +141,10 @@ $(document).ready(function(){
     $('#onderwegbent').click(function() {
         $('.uithangt').hide();
     });
+
+    $('.searchImg').click(function() {
+         $(this).css('background-color','#f2c500');
+    })
 });
 var activeMenu = 0;
 var navOpen = false;
@@ -185,21 +227,81 @@ function openContent(content_tab) {
         $( this ).next( "div" ).hide( "fast", showNext );
     });
 }
+var directionsDisplay;
 
-function initializeFirstRoute() {
-
-    var directionsDisplay;
-    var directionsService = new google.maps.DirectionsService();
+function initializeMap() {
     var map;
 
     directionsDisplay = new google.maps.DirectionsRenderer();
     var mapOptions = {
         center: {lat: 50.903535, lng: 5.633004},
         zoom: 13,
-        mapTypeId: 'satellite'
+        mapTypeId: 'hybrid'
     }
     map = new google.maps.Map(document.getElementById('map'), mapOptions);
     directionsDisplay.setMap(map);
+}
+
+function firstRoute() {
+    var directionsService = new google.maps.DirectionsService();
+
+    var request = {
+        origin: {lat: 50.906948, lng: 5.639857},
+        destination: {lat: 50.906948, lng: 5.639857},
+        waypoints: [
+            {
+                location: {lat: 50.927243, lng: 5.635093},
+                stopover: false
+            }
+        ],
+        travelMode: 'WALKING',
+        unitSystem: google.maps.UnitSystem.IMPERIAL
+    };
+    directionsService.route(request, function(result, status) {
+        if (status == 'OK') {
+            directionsDisplay.setDirections(result);
+        }
+    });
+}
+
+function secondRoute() {
+    var directionsService = new google.maps.DirectionsService();
+
+    var request = {
+        origin: {lat: 50.906948, lng: 5.639857},
+        destination: {lat: 50.906948, lng: 5.639857},
+        waypoints: [
+            {
+                location: {lat: 50.914677, lng: 5.655179},
+                stopover: false
+            },
+            {
+                location: {lat: 50.959985, lng: 5.631001},
+                stopover: false
+            },
+            {
+                location: {lat: 50.955864, lng: 5.628585},
+                stopover: false
+            },
+            {
+                location: {lat: 50.914520, lng: 5.614108},
+                stopover: false
+            }
+        ],
+        travelMode: 'WALKING',
+        unitSystem: google.maps.UnitSystem.IMPERIAL
+    };
+    directionsService.route(request, function(result, status) {
+        if (status == 'OK') {
+            directionsDisplay.setDirections(result);
+        }
+    });
+}
+
+
+function thirdRoute() {
+    var directionsService = new google.maps.DirectionsService();
+   
     var request = {
         origin: {lat: 50.903535, lng: 5.633004},
         destination: {lat: 50.903535, lng: 5.633004},
@@ -231,23 +333,29 @@ function initializeFirstRoute() {
     });
 }
 
-function initializeSecondRoute() {
-    var directionsDisplay;
+function fourthRoute() {
     var directionsService = new google.maps.DirectionsService();
-    var map;
 
-    directionsDisplay = new google.maps.DirectionsRenderer();
-    var mapOptions = {
-        center: {lat: 50.903535, lng: 5.633004},
-        zoom: 13,
-        mapTypeId: 'satellite'
-    }
-    map = new google.maps.Map(document.getElementById('mapTwo'), mapOptions);
-    directionsDisplay.setMap(map);
     var request = {
-        origin: {lat: 50.906948, lng: 5.639857},
-        destination: {lat: 50.927243, lng: 5.635093},
+        origin: {lat: 50.977656, lng: 5.659131},
+        destination: {lat: 50.977656, lng: 5.659131},
         waypoints: [
+            {
+                location: {lat: 50.981183, lng: 5.641522},
+                stopover: false
+            },
+            {
+                location: {lat: 50.980367, lng: 5.631955},
+                stopover: false
+            },
+            {
+                location: {lat: 50.977959, lng: 5.640194},
+                stopover: false
+            },
+            {
+                location: {lat: 50.972514, lng: 5.656136},
+                stopover: false
+            }
         ],
         travelMode: 'WALKING',
         unitSystem: google.maps.UnitSystem.IMPERIAL
@@ -259,9 +367,20 @@ function initializeSecondRoute() {
     });
 }
 
-function hideMaps() {
-    $('#map').hide();
-    $('#mapTwo').hide();
-    $('#mapThree').hide();
-    $('#mapFour').hide();
+function initializeCampingMap() {
+    var map;
+
+    var mapOptions = {
+        center: {lat: 50.903535, lng: 5.633004},
+        zoom: 15,
+        mapTypeId: 'hybrid',
+        mapTypeControl: false,
+        streetViewControl: false,
+    }
+    map = new google.maps.Map(document.getElementById('mapCamping'), mapOptions);
+    var marker = new google.maps.Marker({
+        position: {lat: 50.904241, lng: 5.633747},
+        map: map,
+        title: 'Jocomo Parc'
+    });    
 }
